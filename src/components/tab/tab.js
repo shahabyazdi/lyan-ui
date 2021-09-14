@@ -1,4 +1,4 @@
-import { cloneElement, useRef, useEffect } from "react";
+import React, { cloneElement, useRef, useEffect } from "react";
 import "./tab.scss";
 
 function Icon({ className = "", children, ...props }) {

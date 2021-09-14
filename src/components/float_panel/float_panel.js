@@ -1,4 +1,4 @@
-import { useRef, useEffect, forwardRef } from "react";
+import React, { useRef, useEffect, forwardRef } from "react";
 import { createPortal } from "react-dom";
 import Draggable from "react-draggable";
 import { IconX } from "@tabler/icons";

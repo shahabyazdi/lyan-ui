@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import ElementPopper from "react-element-popper";
 import toLocaleDigits from "../../shared/toLocaleDigits";
 import { IconChevronDown } from "@tabler/icons";

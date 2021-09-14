@@ -12,7 +12,7 @@ import { terser } from "rollup-plugin-terser";
 const external = [
   "react",
   "react-dom",
-  /@babel\/runtime/,
+  // /@babel\/runtime/,
   "prismjs",
   /react-multi-date-picker/,
   "react-element-popper",
@@ -56,8 +56,11 @@ function getProps() {
       babel({
         exclude: /node_modules/,
         presets,
-        babelHelpers: "runtime",
-        plugins: ["@babel/plugin-transform-runtime"],
+        // babelHelpers: "runtime",
+        // plugins: [
+        //   "@babel/plugin-transform-runtime",
+        //   "@babel/plugin-proposal-logical-assignment-operators",
+        // ],
       }),
       commonjs(),
       postcss({

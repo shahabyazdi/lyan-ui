@@ -1,0 +1,53 @@
+$gray: #8798ad;
+$base: #eaeeff;
+
+.lui-fields {
+  background-color: white;
+  border-radius: 0.5em;
+  margin: 0.4em 0;
+
+  &.lui-shadow {
+    box-shadow: 0 0 0.3em $gray;
+  }
+
+  .lui-field {
+    display: flex;
+    border-bottom: 1px solid $base;
+    padding: 0 0.8em;
+
+    > div {
+      margin: 0.5em;
+    }
+
+    .lui-field-element {
+      flex: 1;
+    }
+
+    .lui-field-name,
+    .lui-field-options {
+      width: 10em;
+      margin: auto;
+    }
+
+    .lui-field-name {
+      text-align: right;
+    }
+
+    .lui-field-options {
+      display: flex;
+    }
+  }
+
+  &.lui-rtl .lui-field .lui-field-name {
+    text-align: left;
+  }
+}
+
+@media (max-width: 1000px) {
+  .lui-fields .lui-field {
+    .lui-field-name,
+    .lui-field-options {
+      width: 5em;
+    }
+  }
+}

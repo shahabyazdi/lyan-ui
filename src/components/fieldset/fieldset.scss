@@ -1,0 +1,52 @@
+$blue: #2e5bff;
+$gray: #8798ad;
+$base: #eaeeff;
+$black: #2e384d;
+$element: #f9faff;
+
+.lui-fieldset {
+  background-color: white;
+  border: 1px solid $gray;
+  border-radius: 0.5em;
+  margin: 0.4em 0;
+
+  &.lui-shadow {
+    box-shadow: 0 0 0.3em $gray;
+  }
+
+  .lui-body,
+  .lui-toggle {
+    transition: 0.6s;
+  }
+
+  legend {
+    display: flex;
+    border-radius: 0.5em;
+    padding: 0;
+    overflow: hidden;
+    height: 25px;
+
+    .lui-fieldset-icon {
+      padding: 0 0.4em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+
+      svg {
+        height: 15px;
+        width: 15px;
+      }
+
+      .lui-up {
+        transform: rotate(180deg);
+      }
+    }
+
+    .lui-fieldset-name {
+      padding: 0 0.8em;
+      margin: auto;
+      cursor: default;
+    }
+  }
+}

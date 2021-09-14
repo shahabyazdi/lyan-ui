@@ -1,0 +1,58 @@
+$gray: #8798ad;
+$base: #eaeeff;
+$black: #2e384d;
+$element: #f9faff;
+
+.lui-accordion {
+  border-radius: 0.5em;
+  margin: 0.4em 0;
+  background-color: white;
+  overflow: hidden;
+
+  &.lui-shadow {
+    box-shadow: 0 0 0.3em $gray;
+  }
+
+  &.lui-close {
+    .lui-body {
+      padding: 0;
+    }
+  }
+
+  .lui-title {
+    border-bottom: 1px solid $base;
+    display: flex;
+    padding: 0.4em 0.5em;
+
+    .lui-title-name {
+      margin: auto;
+      padding: 0 0.5em;
+    }
+
+    .lui-accordion-icons {
+      display: flex;
+      padding: 0 0.5em;
+
+      .lui-accordion-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 0.1em;
+      }
+
+      .lui-toggle {
+        transition: 0.4s;
+      }
+
+      .lui-up {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .lui-body {
+    padding-bottom: 0.3em;
+    transition: 0.4s;
+    padding: 0.5em;
+  }
+}

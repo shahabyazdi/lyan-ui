@@ -1,0 +1,50 @@
+$gray: #8798ad;
+$base: #eaeeff;
+$element: #f9faff;
+$border: darken($element, 7);
+
+.lui-tab-layout {
+  border: 1px solid $border;
+  border-radius: 0.5em;
+
+  .lui-pagination {
+    padding: 0.8em;
+    display: flex;
+    overflow: hidden;
+
+    &.lui-border-bottom {
+      border-bottom: 1px solid $border;
+    }
+
+    svg {
+      width: 1.3em;
+      height: 100%;
+      margin-top: auto;
+      margin-bottom: auto;
+
+      &.disabled {
+        color: $gray;
+      }
+    }
+
+    .lui-pages {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+
+      .lui-page-number {
+        width: 1.2em;
+        border: none;
+        border-radius: 0.5em;
+        text-align: center;
+        margin: 0 0.5em;
+
+        &:focus {
+          border: none;
+          outline: none !important;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

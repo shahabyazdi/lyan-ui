@@ -1,0 +1,61 @@
+$base: #eaeeff;
+$gray: #8798ad;
+
+.lui-float-panel {
+  position: fixed !important;
+  background-color: white;
+  border-radius: 0.5em;
+  left: 20%;
+  top: 20%;
+  z-index: 10;
+
+  &.lui-blur {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  &.lui-shadow {
+    box-shadow: 0 0 0.3em $gray;
+  }
+
+  .lui-titlebar {
+    background-color: rgba(245, 245, 245, 0.7);
+    border-bottom: 1px $base solid;
+    border-radius: 0.5em 0.5em 0 0;
+    padding: 0.8em 1em;
+    display: flex;
+    font-weight: unset;
+    justify-content: center;
+    cursor: default;
+
+    .lui-titlebar-name {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .lui-titlebar-icons {
+      display: flex;
+
+      .lui-titlebar-icon {
+        margin: 0 0.1em;
+      }
+
+      svg {
+        width: 15px;
+        height: 100%;
+      }
+
+      .lui-close:hover {
+        color: red;
+      }
+    }
+  }
+
+  .lui-body {
+    padding: 0.5em 1em;
+    overflow: auto;
+  }
+}

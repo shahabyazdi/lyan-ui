@@ -1,0 +1,70 @@
+$blue: #2e5bff;
+$gray: #8798ad;
+$base: #eaeeff;
+
+.lui-tab-container {
+  padding: 0.5em;
+
+  &.lui-rtl .lui-tabs {
+    .lui-tab {
+      margin: 0.5em;
+      margin-left: 0.25em;
+    }
+
+    .lui-tab-icons .lui-tab-icon {
+      border-left: unset;
+      border-right: 1px solid $base;
+    }
+  }
+
+  .lui-tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0.4em;
+    display: flex;
+    background-color: white;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.3em $gray;
+    position: relative;
+    overflow: hidden;
+
+    .lui-tab {
+      padding: 0.4em 1.1em;
+      border-radius: 0.5em;
+      margin: 0.5em;
+      margin-right: 0.25em;
+      cursor: pointer;
+    }
+
+    .lui-tab-overlay {
+      position: absolute;
+      border-radius: 0.5em;
+      top: 0.5em;
+      transition: 0.4s;
+      box-shadow: 0 0 0.3em $gray;
+    }
+
+    .lui-tab-icons {
+      display: flex;
+
+      .lui-tab-icon {
+        width: 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.4s;
+        border-left: 1px solid $base;
+
+        svg {
+          margin: auto;
+        }
+
+        &:hover {
+          background-color: $blue;
+          color: white;
+        }
+      }
+    }
+  }
+}

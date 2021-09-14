@@ -1,0 +1,26 @@
+.lui-option {
+  padding: 0 0.1em;
+}
+
+.lui-option-close:hover,
+.lui-option-delete:hover {
+  color: red !important;
+}
+
+.lui-option-edit:hover {
+  color: gold !important;
+}
+
+.lui-option-up:hover,
+.lui-option-down:hover {
+  color: rgb(32, 119, 250) !important;
+}
+
+.lui-option-disable {
+  color: #b6b2b2;
+}
+
+.lui-option-disable:hover {
+  cursor: default;
+  color: #b6b2b2 !important;
+}

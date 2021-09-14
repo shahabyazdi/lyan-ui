@@ -1,0 +1,24 @@
+$gray: #8798ad;
+$base: #eaeeff;
+$element: #f9faff;
+
+.lui-code-editor {
+  overflow: auto;
+  border-radius: 0.4em;
+  border: 1px solid $base;
+  padding: 0.4em;
+  background-color: $element;
+
+  &.lui-focused {
+    border: 1px solid $gray;
+    box-shadow: 0 0 0.2em $gray;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  textarea:focus {
+    outline: none !important;
+  }
+}

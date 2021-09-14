@@ -1,0 +1,159 @@
+$element: #f9faff;
+$border: darken($element, 7);
+
+.lui-table {
+  border-spacing: unset;
+  border-radius: 0.5em;
+
+  thead {
+    background-color: darken($element, 1);
+    font-weight: 500;
+
+    tr {
+      td,
+      th {
+        border-top: 1px solid $border;
+        border-left: 1px solid $border;
+        padding: 0.8em 0.6em;
+      }
+
+      &:first-child th,
+      &:first-child td {
+        &:first-child {
+          border-radius: 0.5em 0 0 0;
+        }
+
+        &:last-child {
+          border-radius: 0 0.5em 0 0;
+          border-right: 1px solid $border;
+        }
+      }
+    }
+  }
+
+  &.lui-rtl thead tr:first-child {
+    th,
+    td {
+      &:first-child {
+        border-radius: 0 0.5em 0 0;
+        border-right: 1px solid $border;
+      }
+
+      &:last-child {
+        border-radius: 0.5em 0 0 0;
+        border-right: unset;
+        border-left: 1px solid $border;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        padding: 0.6em;
+        border-top: 1px solid $border;
+        border-left: 1px solid $border;
+
+        &:last-child {
+          border-right: 1px solid $border;
+        }
+      }
+
+      &:last-child td {
+        border-bottom: 1px solid $border;
+      }
+    }
+
+    .lui-new-row {
+      cursor: pointer;
+
+      td {
+        padding: 0.35em;
+
+        div {
+          display: flex;
+          justify-content: center;
+        }
+
+        svg {
+          width: 1.4em;
+        }
+      }
+    }
+
+    .lui-pagination {
+      td {
+        padding: 0.6em;
+
+        .lui-data {
+          flex: 1;
+          justify-content: center;
+          flex-direction: column;
+
+          &.lui-rows-data {
+            text-align: start;
+            padding-left: 0.8em;
+            display: flex;
+          }
+
+          &.lui-page-data {
+            text-align: end;
+            padding-right: 0.8em;
+            display: flex;
+          }
+        }
+
+        input {
+          width: 1.3em;
+          border: none;
+          text-align: center;
+          margin: 0 0.4em;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        svg {
+          width: 1.3em;
+          height: 100%;
+          cursor: pointer;
+
+          &.disabled {
+            cursor: default;
+            color: #b6b2b2 !important;
+          }
+        }
+      }
+    }
+  }
+
+  &.lui-rtl tbody {
+    tr {
+      td {
+        border-left: unset;
+        border-right: 1px solid $border;
+
+        &:last-child {
+          border-left: 1px solid $border;
+        }
+      }
+    }
+
+    .lui-pagination {
+      td {
+        .lui-data {
+          &.lui-rows-data {
+            padding-left: unset;
+            padding-right: 0.8em;
+          }
+
+          &.lui-page-data {
+            padding-right: unset;
+            padding-left: 0.8em;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+$gray: #8798ad;
+$base: #eaeeff;
+$black: #2e384d;
+$element: #f9faff;
+$disable: #fcfaf6;
+
+.lui-input {
+  border-radius: 0.4em;
+  border: 1px solid $base;
+  padding: 0.4em;
+  background-color: $element;
+
+  &:focus {
+    outline: none;
+    border: 1px solid $gray;
+    box-shadow: 0 0 0.2em $gray;
+  }
+
+  &:disabled {
+    background-color: $disable;
+  }
+}
+
+.lui-input[type="color"] {
+  padding: 0.3em;
+  height: 2.1em;
+}
+
+textarea.lui-input {
+  resize: none;
+}

@@ -1,0 +1,44 @@
+$element: #f9faff;
+
+.lui-multi-select {
+  background-color: $element;
+  border-radius: 0.4em;
+
+  .lui-placeholder {
+    display: flex;
+    padding: 0.25em 0;
+
+    > span {
+      flex: 1;
+      margin: auto;
+      padding: 0 10px;
+      font-size: 13px;
+      cursor: default;
+      -moz-user-select: none;
+      -khtml-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  }
+
+  .lui-options {
+    background-color: $element;
+    border: 1px solid rgb(48, 46, 46);
+    max-height: 300px;
+    overflow: auto;
+
+    .lui-option {
+      display: flex;
+
+      input {
+        margin-right: 5px;
+      }
+
+      &:hover {
+        background-color: #1e90ff;
+        color: white;
+      }
+    }
+  }
+}

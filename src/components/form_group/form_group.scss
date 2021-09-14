@@ -1,0 +1,14 @@
+$black: #2e384d;
+
+.lui-form-group {
+  padding: 0.6em 0.2em;
+
+  label {
+    font-family: monospace;
+    color: $black;
+    font-weight: 500;
+    font-size: 1.1em;
+    display: inline-block;
+    margin-bottom: 0.3em;
+  }
+}

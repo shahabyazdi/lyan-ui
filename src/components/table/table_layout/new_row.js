@@ -1,3 +1,4 @@
+import React from "react";
 import { IconPlus } from "@tabler/icons";
 
 export default function NewRow({ colSpan, onClick }) {

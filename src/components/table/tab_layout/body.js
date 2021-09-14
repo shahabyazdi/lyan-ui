@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Body({ totalRows, children }) {
   if (totalRows === 0) return null;
 

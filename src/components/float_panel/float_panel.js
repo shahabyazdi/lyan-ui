@@ -38,8 +38,9 @@ function FloatPanel(
   if (shadow) classNames.push("lui-shadow");
   if (!Array.isArray(titleBar.icons)) titleBar.icons = [];
   if (isBrowser && !div.current) div.current = document.createElement("div");
+  if (!id) id = Date.now();
 
-  id = `strong-${id ?? Date.now()}`;
+  id = `strong-${id}`;
   style = { ...style, width: width + "%" };
   className = classNames.join(" ");
 

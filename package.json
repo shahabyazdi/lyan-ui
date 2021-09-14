@@ -1,7 +1,7 @@
 {
   "name": "lyan-ui",
   "version": "0.1.0-beta",
-  "description": "UI Components For Lyan App",
+  "description": "Lyan App UI Components",
   "main": "./components/element.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

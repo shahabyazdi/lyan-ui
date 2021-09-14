@@ -3,6 +3,8 @@ import NewRow from "./new_row";
 import Pagination from "./pagination";
 import "./table_layout.scss";
 
+export { default as getPageData } from "./getPageData";
+
 export default function TableLayout({
   className = "",
   head = [],

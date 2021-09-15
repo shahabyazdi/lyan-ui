@@ -23,7 +23,7 @@ const external = [
 
 const presets = ["@babel/preset-react", "@babel/preset-env"];
 
-export default build("components").concat(build("components/table"));
+export default build("components");
 
 function build(dirName) {
   return fs

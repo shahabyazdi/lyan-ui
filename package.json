@@ -1,6 +1,6 @@
 {
   "name": "lyan-ui",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Lyan App UI Components",
   "main": "./components/element.js",
   "scripts": {

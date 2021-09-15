@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FloatPanel from "../float_panel/float_panel";
+import FloatPanel from "lyan-ui/componenct/float_panel";
 import "./float_modal.scss";
 
 export default function FloatModal({

@@ -1,12 +1,12 @@
 import React from "react";
-import Input from "../../number/number";
+import Input from "lyan-ui/componenct/number";
 import {
   IconChevronLeft,
   IconChevronRight,
   IconChevronsRight,
   IconChevronsLeft,
 } from "@tabler/icons";
-import toLocaleDigits from "../../../shared/toLocaleDigits";
+import toLocaleDigits from "../../shared/toLocaleDigits";
 
 export default function Pagination({
   colSpan,

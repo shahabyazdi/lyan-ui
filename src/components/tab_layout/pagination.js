@@ -1,5 +1,5 @@
 import React from "react";
-import Input from "../../number/number";
+import Input from "lyan-ui/componenct/number";
 import {
   IconChevronLeft,
   IconChevronRight,
@@ -7,7 +7,7 @@ import {
   IconChevronsRight,
   IconPlus,
 } from "@tabler/icons";
-import toLocaleDigits from "../../../shared/toLocaleDigits";
+import toLocaleDigits from "../../shared/toLocaleDigits";
 
 export default function Pagination({
   page,

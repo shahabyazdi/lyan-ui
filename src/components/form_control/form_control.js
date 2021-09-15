@@ -1,8 +1,8 @@
 import React from "react";
-import Switch from "../switch/switch";
-import Input from "../input/input";
-import Number from "../number/number";
-import CodeEditor from "../code_editor/code_editor";
+import Switch from "lyan-ui/componenct/switch";
+import Input from "lyan-ui/componenct/input";
+import Number from "lyan-ui/componenct/number";
+import CodeEditor from "lyan-ui/componenct/code_editor";
 import DatePicker from "react-multi-date-picker";
 import AnalogTimePicker from "react-multi-date-picker/plugins/analog_time_picker";
 

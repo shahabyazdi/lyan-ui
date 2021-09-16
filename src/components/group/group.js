@@ -1,11 +1,11 @@
 import React from "react";
-import List from "lyan-ui/componenct/list";
-import Section from "lyan-ui/componenct/section";
-import FormGroup from "lyan-ui/componenct/form_group";
-import FloatPanel from "lyan-ui/componenct/float_panel";
-import Fieldset from "lyan-ui/componenct/fieldset";
-import Accordion from "lyan-ui/componenct/accordion";
-import FloatModal from "lyan-ui/componenct/float_modal";
+import List from "lyan-ui/components/list";
+import Section from "lyan-ui/components/section";
+import FormGroup from "lyan-ui/components/form_group";
+import FloatPanel from "lyan-ui/components/float_panel";
+import Fieldset from "lyan-ui/components/fieldset";
+import Accordion from "lyan-ui/components/accordion";
+import FloatModal from "lyan-ui/components/float_modal";
 
 export default function Group({ type, children, ...props }) {
   switch (type) {

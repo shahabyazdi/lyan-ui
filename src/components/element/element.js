@@ -1,9 +1,9 @@
 import React from "react";
-import Select from "lyan-ui/componenct/select";
-import MultiSelect from "lyan-ui/componenct/multi_select";
-import Table from "lyan-ui/componenct/table";
-import Group from "lyan-ui/componenct/group";
-import FormControl from "lyan-ui/componenct/form_control";
+import Select from "lyan-ui/components/select";
+import MultiSelect from "lyan-ui/components/multi_select";
+import Table from "lyan-ui/components/table";
+import Group from "lyan-ui/components/group";
+import FormControl from "lyan-ui/components/form_control";
 
 export default function Element({ element, children, ...props }) {
   switch (element) {

@@ -1,5 +1,5 @@
 import React from "react";
-import Input from "lyan-ui/componenct/number";
+import Input from "lyan-ui/components/number";
 import {
   IconChevronLeft,
   IconChevronRight,

@@ -4,7 +4,6 @@ import "./number.scss";
 
 export default function Input({
   value,
-  type,
   className = "",
   onChange,
   onValueChange,
@@ -18,7 +17,6 @@ export default function Input({
 
   let [negative = ""] = (value || "").toString().match(/^-/) || [];
 
-  type = "text";
   value = removeSeparator(value);
 
   if (separator) value = addSeparator(value);
@@ -29,7 +27,7 @@ export default function Input({
     <input
       className={`lui-input ${className}`}
       value={negative + value.replace(".", decimal)}
-      type={type}
+      type="text"
       onChange={handleChange}
       {...props}
     />

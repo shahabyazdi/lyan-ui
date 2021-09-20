@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "lyan-ui/components/button";
 import FloatPanel from "lyan-ui/components/float_panel";
 import "./float_modal.scss";
 
@@ -17,13 +18,13 @@ export default function FloatModal({
 
   return (
     <>
-      <button
+      <Button
         className="lui-float-modal-button"
         onClick={openModal}
         style={buttonStyle}
       >
         {name}
-      </button>
+      </Button>
       {(isVisible || !removePanelOnHide) && (
         <FloatPanel
           onClose={() => setIsVisible(false)}

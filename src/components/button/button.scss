@@ -1,0 +1,49 @@
+$blue: #2e5bff;
+$green: #33ac2e;
+$red: #d63649;
+$yellow: #f7c137;
+$orange: #fa9c0f;
+$light-blue: #00c1d4;
+$dark-blue: #143ac5;
+$purple: #8c54ff;
+$gray: #8798ad;
+$base: #eaeeff;
+$black: #2e384d;
+$element: #f9faff;
+
+.lui-button {
+  border-radius: 0.5em;
+  border: 0;
+  color: white;
+  box-shadow: 0 0.1em 0.3em $gray;
+  min-height: 2.2em;
+  min-width: 6em;
+  padding: 0.2em 0.5em;
+  background-color: $gray;
+  will-change: transform;
+
+  &:hover {
+    box-shadow: 0 0.2em 0.5em $gray, 0 0.2em 0.2em rgb(8, 8, 8);
+    transition: 0.4s;
+  }
+
+  &:active {
+    transform: scale(0.97);
+    transition: 0.2s;
+  }
+
+  &.lui-small {
+    min-height: unset;
+    min-width: unset;
+    padding: 0.15em 0.3em;
+  }
+
+  &.lui-secondary {
+    background-color: $element;
+    color: black;
+
+    &:hover {
+      box-shadow: 0 0.2em 0.5em $gray;
+    }
+  }
+}

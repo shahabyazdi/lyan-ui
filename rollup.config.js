@@ -19,6 +19,7 @@ const external = [
   "react-date-object",
   "react-draggable",
   "react-simple-code-editor",
+  /lyan-ui\/components/,
 ];
 
 const presets = ["@babel/preset-react", "@babel/preset-env"];

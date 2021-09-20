@@ -25,6 +25,17 @@ declare module "lyan-ui/components/accordion" {
 }
 
 declare module "lyan-ui/components/button" {
+  import { HTMLAttributes, FC } from "react";
+
+  interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
+    small?: boolean;
+    secondary?: boolean;
+  }
+
+  export default function Button(props: ButtonProps): FC;
+}
+
+declare module "lyan-ui/components/code_editor" {
   import { FC } from "react";
   import Editor from "react-simple-code-editor";
 
@@ -33,12 +44,6 @@ declare module "lyan-ui/components/button" {
   }
 
   export default function CodeEditor(props: EditorProps): FC;
-}
-
-declare module "lyan-ui/components/code_editor" {
-  import { HTMLAttributes, FC } from "react";
-
-  export default function Button(props: HTMLAttributes<HTMLButtonElement>): FC;
 }
 
 declare module "lyan-ui/components/fields" {
